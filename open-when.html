@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open When ♡</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="paper-grain"></div>
+<header class="nav"><a class="brand" href="index.html">our little scrapbook ♡</a><button class="menu-btn" onclick="toggleMenu()">☰</button>
+<nav id="navLinks"><a href="index.html">Home</a><a href="letters.html">Letters</a><a class="active" href="open-when.html">Open When</a><a href="miles.html">Miles Apart</a><a href="special.html">Boyfriend Day</a><a href="song.html">Our Song</a><a href="forever.html">One Question</a></nav></header>
+
+<main class="page scrapbook-page">
+<p class="eyebrow">chapter three</p><h1>Open When… 🎀</h1>
+<p class="subtitle">Little surprises for different kinds of days.</p>
+<div class="when-grid">
+  <button class="when-card" onclick="showSurprise('miss')">♡<strong>you miss me</strong><small>open this</small></button>
+  <button class="when-card" onclick="showSurprise('sad')">☁<strong>you need a smile</strong><small>open this</small></button>
+  <button class="when-card" onclick="showSurprise('happy')">✦<strong>you have good news</strong><small>open this</small></button>
+  <button class="when-card" onclick="showSurprise('future')">⌂<strong>you think about our future</strong><small>open this</small></button>
+</div>
+<div id="surprise" class="paper surprise hidden"></div>
+<a class="next-link" href="miles.html">Next page: Miles Apart →</a>
+</main>
+<script src="script.js"></script></body></html>

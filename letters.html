@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Little Letters for Baby ♡</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="paper-grain"></div>
+
+<header class="nav">
+  <a class="brand" href="index.html">our little scrapbook ♡</a>
+
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+  <nav id="navLinks">
+    <a href="index.html">Home</a>
+    <a class="active" href="letters.html">Letters</a>
+    <a href="open-when.html">Open When</a>
+    <a href="miles.html">Miles Apart</a>
+    <a href="special.html">Boyfriend Day</a>
+    <a href="song.html">Our Song</a>
+    <a href="forever.html">One Question</a>
+  </nav>
+</header>
+
+<main class="page scrapbook-page">
+
+  <p class="eyebrow">a few little words for you ♡</p>
+
+  <h1>Letters for <span>Baby</span> 💌</h1>
+
+  <p class="subtitle">
+    Some things are easier to say when they're written down.
+    So I left a few little letters here for you. ♡
+  </p>
+
+  <div class="letter-grid">
+
+    <button class="envelope" onclick="openLetter('letter1')">
+      <span>💌</span>
+      <b>For a day you need a little love</b>
+      <small>open this little letter ♡</small>
+    </button>
+
+    <button class="envelope" onclick="openLetter('letter2')">
+      <span>💌</span>
+      <b>For when you miss me</b>
+      <small>open this little letter ♡</small>
+    </button>
+
+    <button class="envelope" onclick="openLetter('letter3')">
+      <span>💌</span>
+      <b>A little Boyfriend Day letter</b>
+      <small>open this little letter ♡</small>
+    </button>
+
+  </div>
+
+  <div class="paper quote-card">
+    <span style="color:#b86f79;font-size:30px;">♡</span>
+    <p>
+      “If I could put every little thought about you
+      into an envelope, I'd probably need a whole mailbox.”
+    </p>
+    <span style="color:#b86f79;font-size:30px;">♡</span>
+  </div>
+
+  <a class="next-link" href="open-when.html">
+    Next little page: Open When →
+  </a>
+
+</main>
+
+<div id="letterModal" class="modal hidden" onclick="closeLetter(event)">
+
+  <div class="letter-paper" onclick="event.stopPropagation()">
+
+    <button class="close" onclick="closeLetter()">×</button>
+
+    <div id="letterText"></div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

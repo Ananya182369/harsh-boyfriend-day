@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Song ♡</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="paper-grain"></div>
+<header class="nav"><a class="brand" href="index.html">our little scrapbook ♡</a><button class="menu-btn" onclick="toggleMenu()">☰</button>
+<nav id="navLinks"><a href="index.html">Home</a><a href="letters.html">Letters</a><a href="open-when.html">Open When</a><a href="miles.html">Miles Apart</a><a class="active" href="song.html">Our Song</a><a href="forever.html">One Question</a></nav></header>
+
+<main class="page song-page scrapbook-page">
+<p class="eyebrow">a song for you</p>
+<h1>Press play, Baby ♫</h1>
+<p class="subtitle">Add your dedicated song below. The browser will start it when he taps Play.</p>
+
+<div class="record paper">
+  <div class="vinyl"><div class="vinyl-label">♡</div></div>
+  <h2 id="songTitle">Our Little Song ♡</h2>
+  <p id="songArtist">The song that reminds me of you</p>
+  <audio id="ourSong" controls preload="metadata">
+    <source src="song.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+  <p class="song-note">“Some songs sound a little more special when they remind me of someone.” ♡</p>
+</div>
+
+<div class="paper song-instructions">
+  <h2>How to add your song</h2>
+  <p>Put your MP3 file inside this website folder and name it <b>song.mp3</b>. Then change the title and artist above in <b>song.html</b>.</p>
+  <p>You can also use your own legally obtained audio file. Don't upload copyrighted music publicly unless you have permission to do so.</p>
+</div>
+<a class="next-link" href="forever.html">Next page: One Important Question →</a>
+</main>
+<script src="script.js"></script></body></html>
